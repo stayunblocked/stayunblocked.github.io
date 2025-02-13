@@ -15,18 +15,11 @@ body {
       color: white;
       border: none;
       cursor: pointer;
-      border-radius: 50px;
+      border-radius: 8px;
     }
 
     button:hover {
       background-color: #cc0000;
-    }
-
-    video {
-      display: none;
-      width: 100%;
-      max-width: 8px;
-      margin-top: 20px;
     }
 
 
