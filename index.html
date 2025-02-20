@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="/style.css">
-<script src="https://kicky-gumbie.github.io/skript/spinny-cat.js"></script>
 <body style="background-color: #FFFFFF">
 <title>Stay Unblocked- Home</title>
 <div style="text-align: center">
@@ -9,6 +8,52 @@
 </div>
 <hr>
 <a><button id="slopeButton">Slope</button></a>
+  <!--script -->
+  <script>    var urlObj = new window.URL(window.location.href);
+    var url = "https://i-dont-know-why-chatgpt-required-a-url-to-be-here-like.wtf/man"; // Original URL, kept for reference
+
+    document.getElementById('slopeButton').onclick = function() {
+      // Create a new window or focus on it if it exists
+      var win = window.open('', '_blank'); // Empty string for a new, blank window
+
+      if (win) {
+        // Build the HTML content for the new window
+        var htmlContent = `
+<html><head><link rel="stylesheet" href="https://stayunblocked.github.io/style.css">
+</head><body style="background-color: #FFFFFF">
+<title>Stay Unblocked- Slope</title>
+<div style="text-align: center">
+<h1>
+<img src="https://stayunblocked.github.io/stay-unblocked.svg" width="20%">
+</h1>
+</div>
+<hr>
+<div style="text-align: center">
+<iframe src="https://kicky-gumbie.github.io/slope3/" width="60%" height="80%">
+</iframe>
+</div>
+<p><br></p>
+<button onclick="window.location.href = 'https://stayunblocked.github.io'">
+<p>Home</p>
+</button>
+
+</body></html>
+        `;
+
+        // Write the HTML content to the new window's document
+        win.document.open();
+        win.document.write(htmlContent);
+        win.document.close();
+
+        // Optional: Focus the new window
+        win.focus();
+
+      } else {
+        // Handle cases where pop-ups are blocked
+        alert("Please allow pop-ups for this site to play the game.");
+      }
+    };
+</script>
 <a href="/minecraft"><button><p>Minecraft</p></button></a>
 
 
